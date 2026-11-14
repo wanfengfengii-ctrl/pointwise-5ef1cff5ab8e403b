@@ -1,0 +1,132 @@
+{
+  "services": {
+    "alpha": {
+      "dominance": {
+        "always_unique": false,
+        "rival": "beta",
+        "witness": {
+          "A": "0",
+          "B": "4"
+        }
+      },
+      "hi": "6",
+      "hi_proof": [
+        [
+          "sync:A:hi",
+          "1"
+        ],
+        [
+          "sync:B:lo",
+          "1"
+        ]
+      ],
+      "hi_witness": {
+        "A": "0",
+        "B": "0"
+      },
+      "lo": "2",
+      "lo_proof": [
+        [
+          "sync:A:lo",
+          "1"
+        ],
+        [
+          "sync:B:hi",
+          "1"
+        ]
+      ],
+      "lo_witness": {
+        "A": "0",
+        "B": "4"
+      },
+      "maximum": {
+        "possible": true,
+        "witness": {
+          "A": "0",
+          "B": "1"
+        }
+      }
+    },
+    "beta": {
+      "dominance": {
+        "always_unique": false,
+        "rival": "alpha",
+        "witness": {
+          "A": "0",
+          "B": "0"
+        }
+      },
+      "hi": "6",
+      "hi_proof": [
+        [
+          "sync:A:lo",
+          "1"
+        ],
+        [
+          "sync:B:hi",
+          "1"
+        ]
+      ],
+      "hi_witness": {
+        "A": "0",
+        "B": "4"
+      },
+      "lo": "2",
+      "lo_proof": [
+        [
+          "sync:A:hi",
+          "1"
+        ],
+        [
+          "sync:B:lo",
+          "1"
+        ]
+      ],
+      "lo_witness": {
+        "A": "0",
+        "B": "0"
+      },
+      "maximum": {
+        "possible": true,
+        "witness": {
+          "A": "0",
+          "B": "3"
+        }
+      }
+    },
+    "gamma": {
+      "dominance": {
+        "always_unique": false,
+        "rival": "alpha",
+        "witness": {
+          "A": "0",
+          "B": "0"
+        }
+      },
+      "hi": "5",
+      "hi_proof": [],
+      "hi_witness": {
+        "A": "0",
+        "B": "0"
+      },
+      "lo": "5",
+      "lo_proof": [],
+      "lo_witness": {
+        "A": "0",
+        "B": "0"
+      },
+      "maximum": {
+        "possible": true,
+        "witness": {
+          "A": "0",
+          "B": "3"
+        }
+      }
+    }
+  },
+  "status": "ok",
+  "witness": {
+    "A": "0",
+    "B": "0"
+  }
+}

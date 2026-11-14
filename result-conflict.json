@@ -1,0 +1,13 @@
+{
+  "proof": [
+    [
+      "queue:u",
+      "1"
+    ],
+    [
+      "queue:v",
+      "1"
+    ]
+  ],
+  "status": "infeasible"
+}

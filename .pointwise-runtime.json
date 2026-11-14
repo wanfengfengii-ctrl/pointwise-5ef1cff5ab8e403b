@@ -5,11 +5,11 @@
   "verify": [
     "python3",
     "checks.py",
-    "normal"
+    "report"
   ],
   "demo": [
     "python3",
-    "source.py",
-    "data/incident.json"
+    "checks.py",
+    "demo"
   ]
 }

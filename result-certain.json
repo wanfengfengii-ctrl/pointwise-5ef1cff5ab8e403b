@@ -1,0 +1,98 @@
+{
+  "services": {
+    "alpha": {
+      "dominance": {
+        "always_unique": true,
+        "margins": {
+          "beta": {
+            "proof": [],
+            "value": "2"
+          }
+        }
+      },
+      "hi": "6",
+      "hi_proof": [
+        [
+          "sync:A:hi",
+          "1"
+        ],
+        [
+          "sync:B:lo",
+          "1"
+        ]
+      ],
+      "hi_witness": {
+        "A": "0",
+        "B": "0"
+      },
+      "lo": "2",
+      "lo_proof": [
+        [
+          "queue:v",
+          "1"
+        ]
+      ],
+      "lo_witness": {
+        "A": "0",
+        "B": "4"
+      },
+      "maximum": {
+        "possible": true,
+        "witness": {
+          "A": "0",
+          "B": "4"
+        }
+      }
+    },
+    "beta": {
+      "dominance": {
+        "always_unique": false,
+        "rival": "alpha",
+        "witness": {
+          "A": "0",
+          "B": "4"
+        }
+      },
+      "hi": "4",
+      "hi_proof": [
+        [
+          "sync:A:hi",
+          "1"
+        ],
+        [
+          "sync:B:lo",
+          "1"
+        ]
+      ],
+      "hi_witness": {
+        "A": "0",
+        "B": "0"
+      },
+      "lo": "0",
+      "lo_proof": [
+        [
+          "queue:v",
+          "1"
+        ]
+      ],
+      "lo_witness": {
+        "A": "0",
+        "B": "4"
+      },
+      "maximum": {
+        "possible": false,
+        "proof": [
+          [
+            "max:beta:alpha",
+            "1"
+          ]
+        ]
+      }
+    }
+  },
+  "status": "ok",
+  "witness": {
+    "A": "0",
+    "B": "4"
+  }
+}
