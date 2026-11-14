@@ -1,0 +1,32 @@
+{
+  "event_file": "events.csv",
+  "window": "reference G clock [990,1320] ms; all target queues are complete",
+  "reference": "G",
+  "offsets": {
+    "G": [0, 0],
+    "B": [-3, 7],
+    "W1": [-5, 6],
+    "W2": [-4, 8],
+    "W3": [-2, 5],
+    "R": ["-11/2", 4]
+  },
+  "requests": ["r1", "r2", "r3"],
+  "services": ["ingest", "enrich", "archive"],
+  "queues": [
+    {"id": "r1-ingest", "enqueue": "r1-ia", "start": "r1-ib"},
+    {"id": "r1-enrich", "enqueue": "r1-ea", "start": "r1-eb"},
+    {"id": "r1-archive", "enqueue": "r1-aa", "start": "r1-ab"},
+    {"id": "r2-ingest", "enqueue": "r2-ia", "start": "r2-ib"},
+    {"id": "r2-enrich", "enqueue": "r2-ea", "start": "r2-eb"},
+    {"id": "r2-archive", "enqueue": "r2-aa", "start": "r2-ab"},
+    {"id": "r3-ingest", "enqueue": "r3-ia", "start": "r3-ib"},
+    {"id": "r3-enrich", "enqueue": "r3-ea", "start": "r3-eb"},
+    {"id": "r3-archive", "enqueue": "r3-aa", "start": "r3-ab"}
+  ],
+  "links": [
+    {"id": "p1", "send": "p1-s", "receive": "p1-r"},
+    {"id": "p2", "send": "p2-s", "receive": "p2-r"},
+    {"id": "p3", "send": "p3-s", "receive": "p3-r"},
+    {"id": "p4", "send": "p4-s", "receive": "p4-r"}
+  ]
+}

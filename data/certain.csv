@@ -1,0 +1,5 @@
+event,request,host,local_ms,kind,service
+u-e,u,A,0,enqueue,alpha
+u-s,u,B,6,start,alpha
+v-e,v,A,20,enqueue,beta
+v-s,v,B,24,start,beta

@@ -1,0 +1,12 @@
+{
+  "event_file": "conflict.csv",
+  "reference": "A",
+  "offsets": {"A": [0, 0], "B": [-5, 5]},
+  "requests": ["u", "v"],
+  "services": ["alpha", "beta"],
+  "queues": [
+    {"id": "u", "enqueue": "u-e", "start": "u-s"},
+    {"id": "v", "enqueue": "v-e", "start": "v-s"}
+  ],
+  "links": []
+}
